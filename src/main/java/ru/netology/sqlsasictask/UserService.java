@@ -1,12 +1,14 @@
 package ru.netology.sqlsasictask;
 
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
-    private ShopRepository shopRepository = new ShopRepository();
-    public void handler(String name) {
+    @Autowired
+    private ShopRepository shopRepository;
 
+    public String handler(String name) {
+        return shopRepository.answer(name);
     }
 }

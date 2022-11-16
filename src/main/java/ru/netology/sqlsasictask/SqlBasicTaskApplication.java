@@ -17,8 +17,7 @@ public class SqlBasicTaskApplication {
     }
 
     @GetMapping("/products/fetch-product")
-    public void hello(@RequestParam("name") String name) {
-        service.handler(name);
+    public String hello(@RequestParam("name") String name) {
+        return service.handler(name);
     }
-
 }
