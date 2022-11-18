@@ -10,6 +10,7 @@ import ru.netology.sqlsasictask.service.DaoService;
 public class DaoController {
     @Autowired
     private DaoService daoService;
+
     @GetMapping("/products/fetch-product")
     public String handlerController(@RequestParam("name") String name) {
         return daoService.handlerService(name);
