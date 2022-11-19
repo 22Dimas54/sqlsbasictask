@@ -23,3 +23,4 @@ alter table netology.ORDERS add constraint customers_orders_fk
 
 create index index_idOrders
     on netology.ORDERS (id);
+

@@ -1,7 +1,7 @@
 databaseChangeLog:
-  -includeSql:
+  - includeSql:
     file: migrations/001-schema.sql
     relativeToChangelogFile: false
-  -includeXml:
+  - includeXml:
     file: migrations/002-sample.xml
     relativeToChangelogFile: true

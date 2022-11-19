@@ -1,4 +1,4 @@
-create table netology.CUSTOMERS(
+create table netology.CUSTOMERS777(
     id int primary key,
     name varchar not null ,
     surname varchar not null ,
