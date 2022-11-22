@@ -1,3 +1,5 @@
+create schema netology;
+
 create table netology.CUSTOMERS(
     id int primary key,
     name varchar not null ,
